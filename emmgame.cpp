@@ -75,7 +75,7 @@ int main() {
             cout << endl;
 
             if (selectedWord.find_first_not_of(guessedLetters) == string::npos) {
-                int score = guessesRemaining * (int)(selectedWord.size() - guessedLetters.size());
+                int score = guessesRemaining * (int)(selectedWord.size());
                 cout << "Congratulations! You've won with a score of " << score << "." << endl;
                 break;
             }
